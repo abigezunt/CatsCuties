@@ -22,8 +22,7 @@ ActiveRecord::Schema.define(version: 20131203225903) do
   end
 
   create_table "line_items", force: true do |t|
-    t.integer  "quantity"
-    t.decimal  "total",      precision: 8, scale: 2
+    t.integer  "quantity",   default: 1
     t.integer  "order_id"
     t.integer  "product_id"
     t.integer  "cart_id"
