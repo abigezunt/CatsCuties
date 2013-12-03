@@ -4,6 +4,7 @@ class CreateProducts < ActiveRecord::Migration
       t.text :name
       t.text :description
       t.text :ingredients
+      t.text :image_url
       t.decimal :unit_price, :precision => 8, :scale => 2
       t.timestamps
     end

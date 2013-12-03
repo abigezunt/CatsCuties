@@ -1,0 +1,13 @@
+<div class="col-sm-6 col-md-4">
+  <div class="thumbnail">
+    <img src="images/apricots.jpg" alt="Chocolate-covered apricots" class="img-thumbnail">
+    <div class="caption">
+      <h3>product.name</h3>
+      <p>product.description</p>
+      <p>
+      <%= link_to "Ingredients", product, class: "btn btn-primary" role: "button" %>
+      <%= link_to "Add to Cart", new_line_item_path(product) class: "btn btn-primary" role: "button" %>
+      </p>
+    </div>
+  </div>
+</div>
