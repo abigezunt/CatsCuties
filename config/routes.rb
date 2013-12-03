@@ -1,5 +1,7 @@
 CatsCuties::Application.routes.draw do
 
+  resources :carts
+
   get "store/index"
   devise_for :users
   resources :products

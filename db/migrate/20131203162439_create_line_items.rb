@@ -5,6 +5,8 @@ class CreateLineItems < ActiveRecord::Migration
       t.integer :product_id
       t.decimal :total, :precision => 8, :scale => 2
       t.belongs_to :order, index: true
+      t.belongs_to :product, index: true
+      t.belongs_to :user, index: true
     end
   end
 end
