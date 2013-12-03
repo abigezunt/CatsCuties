@@ -1,7 +1,29 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Testimonial.create(quote: "OMG...the chocolates were amazing!  Really high-quality chocolate.  Heavenly!", name: "Susan")
+Testimonial.create(quote: "Yum…that really made my mouth happy!", name: "Carol", comment: "after biting into one of our chocolate-dipped apricots.")
+Testimonial.create(quote: "You talk a lot about what your chocolates don't have. What they do have is incredible flavor. So good, you won't know they're missing anything!", name: "H.S.")
+Testimonial.create(quote: "Cat's Cuties are Yummmmmy delicious!", name: "Adina")
+Testimonial.create(quote: "Thanks for the 'dime bag'.  Chocolate is definitely my drug of choice!", name: "Karen")
+Testimonial.create(quote: "Love love love the crunchy dark chocolate!", name: "Shawna")
+Testimonial.create(quote: "The chocolates were yummy and the whole family enjoyed them. Thanks!", name: "Rachel")
+Testimonial.create(quote: "OMG…just tried some of these chocolates.  They are FABULOUS! Love that they're non-dairy AND that you'd never know it. YUMMMMM. The thing about special foods is that you can usually tell. But I'd put these up against the very best (Godiva, Ghirardeli, See's) any day.  Great job Cat!", name: "Harvey")
+Testimonial.create(quote: "Cat's Cuties taste wicked excellent!", name: "Connor", comment: "(can you tell he’s a teenager?)")
+Testimonial.create(quote: "Absolutely delicious!  Thank you, thank you!!!", name: "Jackie")
+Testimonial.create(quote: "My extended family has tons of food allergies, so these chocolates are the perfect idea. Thank you!", name: "Debbie")
+
+Product.create(name: "Alohas", description: "A taste of summer – anytime!  Alohas are clusters of pineapple, cherries, & coconut in our special dark chocolate.", ingredients: "CC chocolate; organic dried pineapple & tart cherries; all-natural, unsulphured, unsweetened, organic coconut flakes. Pineapple & tart cherries are have anti-inflammatory agents.")
+Product.create(name: "Bonnie Bonnies", description: "Super healthy & tasty clusters of coconut, cinnamon, & chocolate", ingredients: "CC chocolate; all-natural, unsulphured, unsweetened, organic coconut flakes; cinnamon.")
+Product.create(name: "Bubbies", description: "My Bubbie (Dad’s Mom) loved ginger & orange peel covered in dark chocolate.  You’ll love these, too!", ingredients: "CC chocolate; organic ginger & orange peel pieces.")
+Product.create(name: "Bundles of Joy", description: "Do you love licorice?  Then these are for you.  Your choice of fruit clustered with anise-infused chocolate.", ingredients: "CC chocolate; organic anise seeds; & dried fruit (tart cherries, apricots, raisins, &/or cranberries).")
+Product.create(name: "Crunch Bunches", description: "Clusters of allergy-friendly, crispy-rice cereal & chocolate.  With or without a spice – your choice (we recommend cinnamon).", ingredients: "CC chocolate; gluten-free, organic chocolate rice cereal (organic brown rice flour, organic evaporated cane juice, organic cocoa, natural chocolate flavor, sea salt, organic molasses, organic tapioca starch).")
+Product.create(name: "Cherry Babies", description: "Clusters of chocolate & tart cherries.  With or without a spice – your choice.", ingredients: "CC chocolate; organic dried tart cherries. Tart cherries are a natural anti-inflammatory.")
+Product.create(name: "Fuegitos", description: "Enjoy a little fire in your food? Fuegitos have snap, crackle, pop, & a little BAM clustered in scrumptious dark chocolate!", ingredients: "CC chocolate; certified gluten-free, organic chocolate rice cereal (organic brown rice flour, organic evaporated cane juice, organic cocoa, natural chocolate flavor, sea salt, organic molasses, organic tapioca starch); cinnamon, & organic peppers. Anti-oxidant rich!")
+Product.create(name: "Goblins", description: "You’ll be gobblin’ these -- & not just for Halloween!  Miss nuts in your chocolates?  How about trying pumpkin seeds (aka “pepitas”)?  With or without a spice – your choice.", ingredients: "CC chocolate, organic pumpkin seeds.")
+Product.create(name: "Hapricots", description: "Chocolate-dipped apricots that will make your mouth happy!", ingredients: "CC chocolate, dried apricots.")
+Product.create(name: "Klezmers", description: "Melodic clusters of chocolate-covered crunchy rice cereal & raisins", ingredients: "CC chocolate; organic raisins; gluten-free,organic chocolate rice cereal (organic brown rice flour, organic evaporated cane juice, organic cocoa, natural chocolate flavor, sea salt, organic molasses, organic tapioca starch).")
+Product.create(name: "Margies", description: "Named after a very special special educator, these are harmonious, sweet & savory clusters of gluten-free pretzels & chocolate.", ingredients: "CC chocolate; gluten-free pretzels – potato flour, corn starch, rice flour, organic palm fruit oil, hi-maize corn starch, corn glucose, baking powder (sodium pyrophosphate, sodium bicarbonate, potato starch, monocalcium phosphate), bamboo fiber, salt, yeast.  May contain traces of sesame or poppy seeds.")
+Product.create(name: "Michugannas", description: "Clusters of chocolate & dried cranberries from Traverse City, Michigan ", ingredients: "CC chocolate; sweetened, dried cranberries from Traverse City, Michigan.")
+Product.create(name: "Open Sesames", description: "Chocolate embellished with sesame seeds & diced apricots.", ingredients: "CC chocolate, dried apricots, & sesame seeds.")
+Product.create(name: "Raisin Kaners", description: "Clusters of chocolate & plump raisins", ingredients: "CC chocolate, organic raisins.  Anti-oxidant rich.")
+Product.create(name: "Royal Plums", description: "Sweet, succulent prunes completely enrobed in chocolate – a Russian delicacy!	", ingredients: "CC chocolate, organic dried plums.  Anti-oxidant rich.")
+Product.create(name: "Thanksgivukkahs", description: "Sweet & savory clusters of pumpkin seeds & gluten-free pretzels in chocolate.", ingredients: "CC chocolate – plus organic pumpkin seeds and gluten-free pretzels – potato flour, corn starch, rice flour, organic palm fruit oil, hi-maize corn starch, corn glucose, baking powder (sodium pyrophosphate, sodium bicarbonate, potato starch, monocalcium phosphate), bamboo fiber, salt, yeast.  May contain traces of sesame or poppy seeds.")

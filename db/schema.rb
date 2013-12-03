@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20131203152641) do
   create_table "products", force: true do |t|
     t.text     "name"
     t.text     "description"
-    t.text     "ingredients",                         array: true
+    t.text     "ingredients"
     t.decimal  "unit_price",  precision: 8, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
