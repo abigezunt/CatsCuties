@@ -5,6 +5,11 @@ CatsCuties::Application.routes.draw do
   resources :carts
 
   get "store/index"
+
+  get "/about" => "store#about", as: 'about'
+  get "/testimonials" => "testimonials#index", as: 'testimonials'
+  get "/contact" => "store#contact", as: 'contact'
+  get "/check_out" => "store#check_out", as: 'check_out'
   devise_for :users
   resources :products
   root :to => "store#index", as: 'store'

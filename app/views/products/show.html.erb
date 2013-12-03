@@ -1,5 +1,8 @@
-<%= image_tag %>
-<%= @product.name%>
-<%= @product.description%>
-<%= @product.ingredients %>
-<%= @product.unit_price%>
+<%= image_tag(@product.image_url) %>
+<h2><%= @product.name%></h2>
+<em><%= @product.description%></em>
+<h3>Ingredients:</h3>
+<p class="lead"><%= @product.ingredients %>
+</p><%= number_to_currency @product.unit_price%>
+
+<%= button_to "Add to cart", line_items_path(product: @product) %>

@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Cat's Cuties</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat's Cuties</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='http://fonts.googleapis.com/css?family=Oldenburg|Noto+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oldenburg|Noto+Serif' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+  <a href="#content" class="sr-only">Skip to main content</a>
 
-  <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <div class="container">
+      <%= render "layouts/banner" %>
+      <%= render 'layouts/navigation' %>
+    </div>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-<a href="#content" class="sr-only">Skip to main content</a>
-
-<div id="wrap">
-
-  <div class="container" id="header">
-    <%= render "shared/banner" %>
-    <%= render "shared/navbar" %>
-  </div>
-
-	<div class="container" id="content">
-	<%= yield %>
-	</div>
-
-	<div class="container" id="footer">
-	  <p class="credit">contact <a href="mailto:cat@catscuties.com">cat@catscuties.com</a></p>
-	</div>
-
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-</body>
+    <main role="main">
+      <div class="container">
+        <div id="content">
+           <div class="row">
+            <div class="span12">
+              <%= render 'layouts/messages' %>
+              <%= yield %>
+            </div>
+          </div>
+          <footer>
+            <p class="credit">contact <a href="mailto:cat@catscuties.com">cat@catscuties.com</a></p>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
+
+
+
+
