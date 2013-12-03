@@ -5,7 +5,13 @@ gem 'rails', '4.0.0'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'pry'
+
+group :development do
+  gem 'pry'
+end
+
+gem 'paperclip', "~> 3.0"
+gem 'aws-sdk'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
