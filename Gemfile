@@ -10,6 +10,8 @@ group :development do
   gem 'pry'
 end
 
+gem 'devise'
+
 gem 'paperclip', "~> 3.0"
 gem 'aws-sdk'
 
