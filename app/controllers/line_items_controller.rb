@@ -24,6 +24,7 @@ class LineItemsController < ApplicationController
   # PATCH/PUT /line_items/1.json
   def update
     respond_to do |format|
+      binding.pry
       if @line_item.update(line_item_params)
         format.html { redirect_to @cart, notice: 'Cart was successfully updated.' }
         format.json { head :no_content }

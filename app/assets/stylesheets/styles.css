@@ -2,6 +2,10 @@ h1, body {font-family: 'Noto Serif', serif;
 color: rgba(94, 35, 0, 1.0000);
 }
 
+body {
+  margin-top: 20px;
+}
+
 em {color: rgba(255, 108, 3, 1.0000);}
 
 .jumbotron {background-color: rgba(255, 255, 255, 1.0000);}
@@ -18,6 +22,10 @@ em {color: rgba(255, 108, 3, 1.0000);}
 	width: 400px;
 	margin: auto;
 	padding: 40px;
+}
+
+.contact-form {
+    margin-top:70px;
 }
 
 .center {
