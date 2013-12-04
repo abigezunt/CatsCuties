@@ -12,8 +12,4 @@ class StoreController < ApplicationController
   def contact
   end
 
-  def check_out
-  	Order.create(session[:cart_id])
-  end
-
 end

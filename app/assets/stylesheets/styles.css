@@ -11,6 +11,7 @@ em {color: rgba(255, 108, 3, 1.0000);}
 .btn-primary {
 	background-color: rgba(255, 108, 3, 1.0000);
 	border-color: rgba(94, 35, 0, 1.0000);
+  display: inline-block;
 	}
 
 .form-signin {
@@ -19,6 +20,9 @@ em {color: rgba(255, 108, 3, 1.0000);}
 	padding: 40px;
 }
 
+.center {
+  text-align: center;
+}
 #hero-img {
 	max-width: 100%;
 }
@@ -35,37 +39,37 @@ em {color: rgba(255, 108, 3, 1.0000);}
 }
 
 .navbar-default {
-  background-color: rgba(94, 35, 0, 0.2);
+  background-color: rgba(94, 35, 0, 1);
   border-color: #e7e7e7;
 }
 
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: white;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: rgba(255, 108, 3, 1.0000);
   background-color: transparent;
 }
 
 .navbar-default .navbar-text {
-  color: #777777;
+  color: white;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: white;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: rgba(255, 108, 3, 1.0000);
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
+  color: rgba(255, 108, 3, 1.0000);;
   background-color: rgba(94, 35, 0, 0.4);
 }

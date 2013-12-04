@@ -11,12 +11,11 @@
 	  	<div class="three columns">
 	  		<% group.each do |product| %>
 	  		  <% cache ['entry', product] do %>
-	  		    <%#= render "products/product" if product %>
-
 
 						<div class="col-sm-6 col-md-4">
 						  <div class="thumbnail">
-						    <%= image_tag product.image_url, class: "img-thumbnail" %>
+						    <%#= image_tag product.image_url, class: "img-thumbnail" %>
+						    <%= image_tag "apricots.jpg", class: "img-thumbnail" %>
 						    <div class="caption">
 						      <h3><%= product.name %></h3>
 						      <p><%= sanitize(product.description) %></p>

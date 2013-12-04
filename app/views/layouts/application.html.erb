@@ -10,15 +10,18 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+  <div id="wrap">
+
   <a href="#content" class="sr-only">Skip to main content</a>
 
-    <div class="container">
-      <%= render "layouts/banner" %>
+    <div class="navbar navbar-fixed-top">
       <%= render 'layouts/navigation' %>
     </div>
 
     <main role="main">
       <div class="container">
+        <div class="page-header"><%= render "layouts/banner" %></div>
+
         <div id="content">
            <div class="row">
             <div class="span12">
@@ -26,12 +29,17 @@
               <%= yield %>
             </div>
           </div>
-          <footer>
-            <p class="credit">contact <a href="mailto:cat@catscuties.com">cat@catscuties.com</a></p>
-          </footer>
         </div>
       </div>
     </main>
+  
+  </div>
+
+          <div id="footer">
+            <div class="container">
+              <p class="muted credit"><a href="http://github.com/abigezunt">built by Abby Howell</a></p>
+            </div>
+          </div>
   </body>
 </html>
 

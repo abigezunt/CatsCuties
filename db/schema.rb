@@ -36,7 +36,12 @@ ActiveRecord::Schema.define(version: 20131203225903) do
 
   create_table "orders", force: true do |t|
     t.integer  "user_id"
+    t.text     "name"
+    t.text     "address"
+    t.text     "email"
+    t.text     "charity"
     t.boolean  "paid",       default: false
+    t.boolean  "shipped",    default: false
     t.datetime "order_date"
     t.datetime "created_at"
     t.datetime "updated_at"

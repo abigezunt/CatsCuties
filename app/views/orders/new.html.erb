@@ -1,0 +1,15 @@
+<div class="form"> 
+<fieldset>
+<legend>Please Enter Your Details</legend>
+<%= simple_form_for(@order, :html => { :class => 'form-horizontal' }) do |f| %>
+
+  <%= f.input :name, :input_html => { :class => "span6" }%>
+  <%= f.input :email, :input_html => { :class => "span6" }%>
+  <%= f.input :address, :input_html => { :class => "span6" } %>
+  <%= f.input :charity, :collection => ["Autism Alliance of Metrowest", "Congregation Beth El Sudbury", "Crossroads School for Chidren", "Federation for Children with Special Needs", "Framingham Education Foundation", "Performing Arts Center of MetroWest"], :hint => "Customers may choose to have 18% of the net profits from their order go to one of these local organizations" %>
+  <%= f.button :submit, :class => 'btn-primary' %>
+
+  <%= submit_tag 'Cancel', :type => :reset, :class => "btn btn-danger"%>
+<% end %>
+</fieldset>
+</div>

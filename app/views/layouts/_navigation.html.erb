@@ -1,4 +1,4 @@
-<div class="nav">
+<!-- <div class="nav">
 
   <%= link_to "Home", store_path, :class => 'brand' %> | 
 
@@ -21,7 +21,7 @@
     <%= link_to('Sign up', new_user_registration_path)  %>
     </span>
   <% end %>
-</div>
+</div> -->
 
 <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,7 +42,7 @@
       <li><%= link_to "Testimonials", testimonials_path %></li>
       <li><%= link_to "Contact", contact_path %></li>
       <li><%= link_to "View Cart", cart_path(session[:cart_id]) %></li>
-      <li><%= link_to "Check Out", check_out_path %></li>
+      <li><%= link_to "Check Out", new_order_path %></li>
     </ul>
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
