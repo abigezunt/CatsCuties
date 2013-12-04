@@ -1,6 +1,9 @@
 class StoreController < ApplicationController
+  include CurrentCart
+  before_action :set_cart
+
   def index
-  	@products = Product.all
+  	@products = Product.order("updated_at DESC")
   end
 
   def about
