@@ -28,7 +28,8 @@ class LineItemsController < ApplicationController
         format.html { redirect_to @cart, notice: 'Cart was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { redirect_to @cart, notice: "Quantity can't be negative, cheater."}
+        @line_item.destroy
+        format.html { redirect_to @cart, notice: "Item deleted."}
         format.json { render json: @line_item.errors, status: :unprocessable_entity }
       end
     end

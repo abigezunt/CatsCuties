@@ -15,7 +15,7 @@
   <td class="col-sm-1 col-md-1" style="text-align: center">
   <%= simple_form_for(line_item) do |f| %>
   <%= f.input :quantity, as: :email, html: {class: "form-control"}%>
-  <%= f.submit "Update Quantity", {class: "btn btn-default quantity"} %>
+  <%= f.submit "Update", {class: "btn btn-default quantity"} %>
   <% end %>
   </td>
   <td class="col-sm-1 col-md-1 text-center"><strong><%= number_to_currency(line_item.product_unit_price)%></strong></td>
