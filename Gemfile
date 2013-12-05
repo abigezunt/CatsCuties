@@ -15,6 +15,7 @@ gem 'dotenv-rails'
 
 gem 'devise'
 gem 'simple_form', '>= 3.0.0.rc'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 
 gem 'paperclip', "~> 3.0"

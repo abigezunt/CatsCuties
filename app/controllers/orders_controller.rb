@@ -24,13 +24,13 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
     @order.add_line_items_from_cart(@cart)
-    if current_user
-      @order.user = current_user
-    end
 
     respond_to do |format|
       if @order.save
         Cart.destroy(session[:cart_id])
+        session[:cart_id] = nil
+        OrderNotifier.received(@order).deliver
+        OrderNotifier.order_created(@order).deliver
         format.html { redirect_to store_url, notice: 'Thank you for your order.' }
         format.json { render action: 'show', status: :created, location: @order }
       else
@@ -45,6 +45,9 @@ class OrdersController < ApplicationController
   def update
     respond_to do |format|
       if @order.update(order_params)
+        if @order.ship_date
+          OrderNotifier.shipped(@order).deliver
+        end
         format.html { redirect_to @order, notice: 'Order was successfully updated.' }
         format.json { head :no_content }
       else
