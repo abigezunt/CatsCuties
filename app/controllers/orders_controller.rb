@@ -7,23 +7,41 @@ class OrdersController < ApplicationController
   	@orders = Order.all
   end
 
-  def show
-  end
+
 
   def new
   	if @cart.line_items.empty?
   		redirect_to store_url, notice: "Your cart is empty."
-  		return
-  	end
-  	@order = Order.new
-  end
-
-  def edit
+  	else
+  	  @order = Order.new
+      @amount = @cart.total_price
+    end 
   end
 
   def create
+
     @order = Order.new(order_params)
     @order.add_line_items_from_cart(@cart)
+
+    # Amount in cents
+    @amount = (@cart.total_price * 100).to_i
+    customer = Stripe::Customer.create(
+      email: @order.email,
+      card: params[:stripeToken]
+    )
+
+    stripe_order = Stripe::Charge.create(
+      customer: customer.id,
+      amount: @amount,
+      description: 'Rails Stripe customer',
+      currency: 'usd'
+    )
+    # rescue Stripe::CardError => e
+    #   flash[:error] = e.message
+
+    if @order.errors.empty?
+      @order.paid = true
+    end
 
     respond_to do |format|
       if @order.save
@@ -38,6 +56,9 @@ class OrdersController < ApplicationController
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end
     end
+
+
+
   end
 
   # PATCH/PUT /orders/1

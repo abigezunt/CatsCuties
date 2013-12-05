@@ -7,9 +7,19 @@
   <%= f.input :email, :input_html => { :class => "span6" }%>
   <%= f.input :address, :input_html => { :class => "span6" } %>
   <%= f.input :charity, :collection => ["Autism Alliance of Metrowest", "Congregation Beth El Sudbury", "Crossroads School for Chidren", "Federation for Children with Special Needs", "Framingham Education Foundation", "Performing Arts Center of MetroWest"], :hint => "Customers may choose to have 18% of the net profits from their order go to one of these local organizations" %>
-  <%= f.button :submit, :class => 'btn-primary' %>
 
-  <%= submit_tag 'Cancel', :type => :reset, :class => "btn btn-danger"%>
+  <article>
+    <label class="amount">
+      <span>Amount: <%= number_to_currency(@amount) %></span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Cat's Cuties Extraordinary Chocolates"
+          data-amount="<%= (@amount * 100).to_i %>"></script>
 <% end %>
+
+<br>
 </fieldset>
 </div>
