@@ -1,14 +1,48 @@
-h1, body {font-family: 'Noto Serif', serif;
+h1, p, div, span {
 color: rgba(94, 35, 0, 1.0000);
 }
 
-body {
-  margin-top: 20px;
+.thumbnail {
+  background: url(squairy_light.png) repeat 0 0;
+  padding-top: 12px;
 }
 
-em {color: rgba(255, 108, 3, 1.0000);}
+.caption p.description {
+  height: 100px;
+  overflow: scroll;
+}
 
-.jumbotron {background-color: rgba(255, 255, 255, 1.0000);}
+.jumbotron {
+  background: url(subtle_white_feathers.png) repeat 0 0;
+  margin-top: 80px;
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', Georgia, Times, serif;
+    color: rgba(255, 108, 3, 1.0000);
+}
+
+h1 {
+    font-size: 59px;
+    line-height: 60px;
+    text-shadow: 5px 1px 1px #ccc;
+}
+ 
+p, div {
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+.inline {
+  display: inline;
+}
+#subheading, em {color: rgba(255, 108, 3, 1.0000);}
+
+.jumbotron {
+  background-color: rgba(255, 255, 255, 1.0000);
+  margin-bottom: 0px;
+  padding: 5px;
+  }
 
 #chocolate_bar {width: 100%;}
 
@@ -36,18 +70,7 @@ em {color: rgba(255, 108, 3, 1.0000);}
   text-align: center;
 }
 #hero-img {
-	max-width: 100%;
-}
-
-.carts {
-  .item_price, .total_line {
-    text-align: right;
-  }
-
-  .total_line .total_cell {
-    font-weight: bold;
-    border-top: 1px solid rgba(255, 108, 3, 1.0000);
-  }
+	max-height: 140px;
 }
 
 .navbar-default {

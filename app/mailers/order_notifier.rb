@@ -1,12 +1,12 @@
 class OrderNotifier < ActionMailer::Base
-  default from: "cat@catscuties.com"
+  default from: "abby.g.howell@gmail.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
   #   en.order_notifier.received.subject
   #
-  def received
+  def received(order)
     @order = order
 
     mail to: order.email, subject: "Cat's Cuties Order Confirmation"
@@ -17,7 +17,7 @@ class OrderNotifier < ActionMailer::Base
   #
   #   en.order_notifier.shipped.subject
   #
-  def shipped
+  def shipped(order)
     @order = order
 
     mail to: order.email, subject: "Cat's Cuties Order Shipped"
@@ -28,7 +28,7 @@ class OrderNotifier < ActionMailer::Base
   #
   #   en.order_notifier.order_created.subject
   #
-  def order_created
+  def order_created(order)
     @order = order
 
     mail to: "kaner.cat@gmail.com", subject: "New Order from Cat's Cuties"

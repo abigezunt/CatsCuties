@@ -14,17 +14,9 @@ CatsCuties::Application.configure do
 
 
   config.action_mailer.delivery_method = "smtp"
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
-    domain: "gmail.com",
-    authentication: "plain",
-    user_name: "kaner.cat", 
-    password: "secret",
-    enable_starttls_auto: true
-  }
+
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
