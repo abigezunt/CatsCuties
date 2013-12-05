@@ -3,6 +3,7 @@ CatsCuties::Application.routes.draw do
   resources :line_items
   resources :carts
   resources :orders
+  resources :charges
 
   get "/about" => "store#about", as: 'about'
   get "/testimonials" => "testimonials#index", as: 'testimonials'
