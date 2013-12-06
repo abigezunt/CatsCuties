@@ -25,7 +25,7 @@ h1, h2, h3 {
 h1 {
     font-size: 59px;
     line-height: 60px;
-    text-shadow: 5px 1px 1px #ccc;
+    text-shadow: 1px 1px 1px #ccc;
 }
  
 p, div, span {

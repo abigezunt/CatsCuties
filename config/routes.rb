@@ -8,7 +8,7 @@ CatsCuties::Application.routes.draw do
   get "/about" => "store#about", as: 'about'
   get "/testimonials" => "testimonials#index", as: 'testimonials'
   get "/contact" => "store#contact", as: 'contact'
-  
+  get "/news" => "store#news", as: 'news'
   devise_for :users
   resources :products
   root :to => "store#index", as: 'store'
