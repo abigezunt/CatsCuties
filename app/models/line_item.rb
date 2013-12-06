@@ -1,7 +1,7 @@
 class LineItem < ActiveRecord::Base
 	belongs_to :product
 	belongs_to :cart
-	validates :quantity, :numericality => {:greater_than_or_equal_to => 1}
+	validates :quantity, :numericality => {:greater_than_or_equal_to => 12}
 	delegate :name, :description, :unit_price, :image_url, to: :product, prefix: true
   before_update :delete_if_invalid_quantity
 

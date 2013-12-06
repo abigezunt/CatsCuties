@@ -29,7 +29,7 @@ class LineItemsController < ApplicationController
         format.json { head :no_content }
       else
         @line_item.destroy
-        format.html { redirect_to @cart, notice: "Item deleted."}
+        format.html { redirect_to @cart, notice: "Minimum order is 12 pieces per flavor."}
         format.json { render json: @line_item.errors, status: :unprocessable_entity }
       end
     end
