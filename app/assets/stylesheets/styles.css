@@ -143,3 +143,19 @@ body, h1, h2, h3, h4, h5, h6, p, div, span, small {
 .center {
   text-align: center;
 }
+
+#sidemenunav {
+  background: transparent;
+  bottom: 25px;
+  left: 5px;
+  position: fixed;
+  width: 64px;
+}
+
+
+#sidemenunav a {
+  display: block;
+  height: 64px;
+  background-image: url("facebook.png");
+  background-size: 64px 64px;
+}
