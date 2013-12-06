@@ -1,9 +1,5 @@
 <h2>Our delicious, gluten-free, vegan, dairy-free, kosher-parve, allergen-friendly, dark chocolates</h2>
 
-<% if notice %>
-  <p id="notice"><%= notice %></p>
-<% end %>
-
 <% cache ['store', Product.latest] do %>
 	<div class="row">
 	<% @products.in_groups_of(3, false).each do |group|%>

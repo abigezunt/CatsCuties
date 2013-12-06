@@ -1,10 +1,10 @@
 <div class="text-center" id="banner-header">
-	<div class="img-rounded inline-block span4">
-	  <%= image_tag("bow.png", :id => "hero-img") %>
+	<div class="inline-block span2">
+	  <%= image_tag("bow.png", :id => "hero-img", :class => "img-responsive") %>
 	</div> 
 	<div class="inline-block span8" id="banner">
-	  <h1 id="heading">Cat's Cuties</h1>  
-	  <p id="subheading">special desserts for special people</p>
+	  <h1 class="brown" id="heading">Cat's Cuties</h1>  
+	  <h3 class="orange" id="subheading">special desserts for special people</h3>
 	</div>
 </div>
 
@@ -13,48 +13,19 @@
   <h2 id="chocolates">CHOCOLATES</h2>
 </div>
 
-<div class="row">
-	<div class="col-sm-4"><%= image_tag( "candy1.png", :class=> "img-shadow") %></div>
-	<div class="col-sm-4"><%= image_tag( "candy2.png", :class=> "img-shadow") %></div>
-	<div class="col-sm-4"><%= image_tag( "candy3.png", :class=> "img-shadow") %></div>
+<div class="span12 text-center">
+	<div class="inline-block"><%= image_tag( "candy1.png", :class=> "img-shadow img-responsive") %></div>
+	<div class="inline-block"><%= image_tag( "candy2.png", :class=> "img-shadow img-responsive") %></div>
+	<div class="inline-block"><%= image_tag( "candy3.png", :class=> "img-shadow img-responsive") %></div>
 </div>
 
-<div class="row">
-  <div class="col-sm-2">
-    <div class="checkbox"><%= image_tag "checkbox.png" %></div>
-  </div>
-  <div class="col-sm-10">
-    <h1 class="main-page-checklist">Free of most allergens & problem ingredients</h1>
-    <h2 class="main-page-checklist">no gluten/wheat, dairy/casein, nuts, soy, trans fat, cholesterol - low or no sodium</h2>
-  </div>
-</div>
+<ul id="checklist">
+<li><h1 class="brown"><%= image_tag "checkbox.png" %> Free of most allergens & problem ingredients</h1>
+    <h2 class="brown">no gluten/wheat, dairy/casein, nuts, soy, trans fat, cholesterol - low or no sodium</h2></li>
+<li><h1 class="brown"><%= image_tag "checkbox.png" %> Vegan</h1></li>
+<li><h1 class="brown"><%= image_tag "checkbox.png" %> Kosher-parve</h1></li>
+<li><h1 class="brown"><%= image_tag "checkbox.png" %> Antioxidant-rich</h1></li>
+</ul>
 
-<div class="row">
-  <div class="col-sm-2">
-    <div class="checkbox"><%= image_tag "checkbox.png" %></div>
-  </div>
-  <div class="col-sm-10">
-    <h1 class="main-page-checklist">Vegan</h1>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-sm-2">
-    <div class="checkbox"><%= image_tag "checkbox.png" %></div>
-  </div>
-  <div class="col-sm-10">
-    <h1 class="main-page-checklist">Kosher-parve</h1>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-sm-2">
-    <div class="checkbox"><%= image_tag "checkbox.png" %></div>
-  </div>
-  <div class="col-sm-10">
-    <h1 class="main-page-checklist">Antioxidant-rich</h1>
-  </div>
-</div>
-
-<div class="text-center" id="wrapped-chocolates"><%= image_tag "wrapped-chocolates.png" %></div>
+<div class="text-center span6" id="wrapped-chocolates"><%= image_tag("wrapped-chocolates.png", :class => "img-responsive") %></div>
 

@@ -1,3 +1,18 @@
+li {
+  padding: 5px;
+}
+
+.orange, h1, h2, h3, em {
+  color: rgba(255, 108, 3, 1.0000);
+}
+
+.brown, p, div, span, h4, h5, h6 {
+  color: rgba(94, 35, 0, 1.0000);
+}
+
+.italic {
+  font-weight: italic;
+}
 
 .thumbnail {
   padding-top: 12px;
@@ -9,24 +24,11 @@
 }
 
 #content {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
-h1, h2, h3 {
-    font-family:'BookmanOldStyleW10-Bold';
-    color: rgba(255, 108, 3, 1.0000);
-}
-
-h1 {
-    font-size: 59px;
-    line-height: 60px;
-}
- 
-p, div, span {
-    color: rgba(94, 35, 0, 1.0000);
-    font-family:'Bookman Old Style W01';
-    font-size: 18px;
-    line-height: 25px;
+body, h1, h2, h3, h4, h5, h6, p, div, span, small {
+  font-family: 'EB Garamond', serif;
 }
 
 .inline {
@@ -38,25 +40,19 @@ p, div, span {
 }
 
 #heading {
-  font-size: 5em;
-  color: rgba(94, 35, 0, 1.0000);
   margin-top: 20px;
   text-shadow: 3px 1px 1px #ccc;
+  font-size: 6em;
+  font-weight: bolder;
 }
 
 #subheading {
-  color: rgba(255, 108, 3, 1.0000);
-  font-family:'BookmanOldStyleW10-Ital';
-  font-size: 1.8em;
   padding: 10px;
+  font-size: 3em;
 }
 
 #banner {
   margin-left: 30px;
-}
-
-#banner-header {
-  margin: 30px;
 }
 
 #hero-img {
@@ -68,55 +64,55 @@ p, div, span {
 #wavy {
   background-color: rgba(94, 35, 0, 1.0000);
   padding: 20px;
+  display: block;
   width: 100%;
-  margin: 20px 0px 40px 0px;
+  padding: 10px 0px;
+  margin: 0px;
 }
 
 #deliciousdark {
-  font-size: 5em;
   color: rgba(255, 108, 3, 1.0000);
+  font-size: 5em;
+  font-weight: bold;
 }
 
 #chocolates {
   color: white;
-  font-size: 6em;
   text-shadow: 3px 2px 1px #ccc;
+  font-size: 5em;
+  font-weight: bold;
 }
 
 .img-shadow {
-  max-width: 300px;
-  text-align: center;
-  margin: 60px;
-  padding: 10px;
+  max-width: 200px;
+  margin: 20px;
   border: 2px solid rgba(94, 35, 0, 1.0000);
   -webkit-box-shadow: 5px 5px 3px rgba(50, 50, 50, 0.62);
   -moz-box-shadow:    5px 5px 3px rgba(50, 50, 50, 0.62);
   box-shadow:         5px 5px 3px rgba(50, 50, 50, 0.62);
 }
 
-.checkbox {
-  padding-top: 20px;
-  margin-right: -30px;
-}
-
-.main-page-checklist {
-  color: rgba(94, 35, 0, 1.0000);
-  padding: 15px 15px 15px 0px;
-  line-height: 1.2em;
-}
-
-h1.main-page-checklist {
-  font-size: 4em;
-
-}
-
-h2.main-page-checklist {
-  font-size: 2em;
-}
 
 #wrapped-chocolates {
-  padding: 100px;
+  padding: 60px;
 }
+
+#checklist {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 8em;
+  text-indent: -8em;
+  margin-left: 3em;
+}
+
+#checklist h2{
+  text-indent: 0em;
+}
+
+.hearts {
+  list-style-image: url("heart.jpg");
+}
+
 
 .btn-primary {
 	background-color: rgba(252, 148, 23, 1.0000);
@@ -141,45 +137,9 @@ h2.main-page-checklist {
 }
 
 .contact-form {
-    margin-top:70px;
+  margin-top:70px;
 }
 
 .center {
   text-align: center;
-}
-
-.navbar-default {
-  background-color: rgba(94, 35, 0, 1);
-  border-color: #e7e7e7;
-}
-
-.navbar-default .navbar-brand {
-  color: white;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: rgba(255, 108, 3, 1.0000);
-  background-color: transparent;
-}
-
-.navbar-default .navbar-text {
-  color: white;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: white;
-}
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: rgba(255, 108, 3, 1.0000);
-  background-color: transparent;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: rgba(255, 108, 3, 1.0000);;
-  background-color: rgba(94, 35, 0, 0.4);
 }

@@ -1,29 +1,6 @@
-<!-- <div class="nav">
 
-  <%= link_to "Home", store_path, :class => 'brand' %> | 
-
-  <% if user_signed_in? %>
-    <span>
-    <%= link_to('Logout', destroy_user_session_path, :method=>'delete') %>
-    </span>
-  <% else %>
-    <span>
-    <%= link_to('Login', new_user_session_path)  %>
-    </span>
-  <% end %>
-   | 
-  <% if user_signed_in? %>
-    <span>
-    <%= link_to('Edit account', edit_user_registration_path) %>
-    </span>
-  <% else %>
-    <span>
-    <%= link_to('Sign up', new_user_registration_path)  %>
-    </span>
-  <% end %>
-</div> -->
-
-<nav class="navbar navbar-default" role="navigation">
+<div class="navbar navbar-fixed-top">
+  <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -36,7 +13,7 @@
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
       <li><%= link_to "Buy Our Chocolates", store_path %></li>
       <li><%= link_to "Customers Say \"Yum\"", testimonials_path %></li>
@@ -48,3 +25,4 @@
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
+</div>

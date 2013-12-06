@@ -3,20 +3,15 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat's Cuties</title>
-    <script type="text/javascript" src="http://fast.fonts.net/jsapi/6c34994a-bdf3-4f01-853c-90d02cc179ef.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
   <body>
   <div id="wrap">
-
   <a href="#content" class="sr-only">Skip to main content</a>
-
-    <div class="navbar navbar-fixed-top">
-      <%= render 'layouts/navigation' %>
-    </div>
-
+  <%= render 'layouts/navigation' %>
     <main role="main">
       <div class="container">
         <div id="content">
@@ -28,16 +23,14 @@
           </div>
         </div>
       </div>
-    </main>
-  
+    </main>  
   </div>
-
-          <div id="footer">
-            <div class="container">
-              <p class="muted credit"><a href="http://github.com/abigezunt">built by Abby Howell</a><a href="https://generalassemb.ly/education/web-development-immersive"> at General Assembly</a></p>
-            </div>
-          </div>
-  </body>
+  <div class="container">
+    <div id="footer">
+      <p class="muted credit"><a href="http://github.com/abigezunt">built by Abby Howell</a><a href="https://generalassemb.ly/education/web-development-immersive"> at General Assembly</a></p>
+    </div>
+  </div>
+</body>
 </html>
 
 
