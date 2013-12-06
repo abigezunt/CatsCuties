@@ -6,14 +6,14 @@
 <% @testimonials.each do |testimonial| %>
   <div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-			  <div class="panel-body">
-			    <strong><%= testimonial.quote %> - <%= testimonial.name %></strong>
-			    <% if testimonial.comment %>
-			      <%= testimonial.comment %>
-			    <% end %>
-			  </div>
-			</div>   
+	    <blockquote>
+	    <p><%= testimonial.quote %></p>
+	    <small><%= testimonial.name %>
+	    <% if testimonial.comment %>
+	      <%= testimonial.comment %>
+	    <% end %>
+	    </small>
+	    </blockquote>
 	  </div>
 	</div>
 <% end %>

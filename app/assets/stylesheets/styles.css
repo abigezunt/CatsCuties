@@ -1,9 +1,5 @@
-h1, p, div, span {
-color: rgba(94, 35, 0, 1.0000);
-}
 
 .thumbnail {
-  background: url(squairy_light.png) repeat 0 0;
   padding-top: 12px;
 }
 
@@ -12,9 +8,8 @@ color: rgba(94, 35, 0, 1.0000);
   overflow: scroll;
 }
 
-.jumbotron {
-  background: url(subtle_white_feathers.png) repeat 0 0;
-  margin-top: 80px;
+#content {
+  margin-top: 50px;
 }
 
 h1, h2, h3 {
@@ -25,10 +20,10 @@ h1, h2, h3 {
 h1 {
     font-size: 59px;
     line-height: 60px;
-    text-shadow: 1px 1px 1px #ccc;
 }
  
 p, div, span {
+    color: rgba(94, 35, 0, 1.0000);
     font-family:'Bookman Old Style W01';
     font-size: 18px;
     line-height: 25px;
@@ -38,15 +33,90 @@ p, div, span {
   display: inline;
 }
 
-#subheading, em {color: rgba(255, 108, 3, 1.0000);}
+.inline-block {
+  display: inline-block;
+}
 
-.jumbotron {
-  background-color: rgba(255, 255, 255, 1.0000);
-  margin-bottom: 0px;
-  padding: 5px;
-  }
+#heading {
+  font-size: 5em;
+  color: rgba(94, 35, 0, 1.0000);
+  margin-top: 20px;
+  text-shadow: 3px 1px 1px #ccc;
+}
 
-#chocolate_bar {width: 100%;}
+#subheading {
+  color: rgba(255, 108, 3, 1.0000);
+  font-family:'BookmanOldStyleW10-Ital';
+  font-size: 1.8em;
+  padding: 10px;
+}
+
+#banner {
+  margin-left: 30px;
+}
+
+#banner-header {
+  margin: 30px;
+}
+
+#hero-img {
+  max-height: 120px;
+  margin-top: -60px;
+  padding-bottom: 20px;
+}
+
+#wavy {
+  background-color: rgba(94, 35, 0, 1.0000);
+  padding: 20px;
+  width: 100%;
+  margin: 20px 0px 40px 0px;
+}
+
+#deliciousdark {
+  font-size: 5em;
+  color: rgba(255, 108, 3, 1.0000);
+}
+
+#chocolates {
+  color: white;
+  font-size: 6em;
+  text-shadow: 3px 2px 1px #ccc;
+}
+
+.img-shadow {
+  max-width: 300px;
+  text-align: center;
+  margin: 60px;
+  padding: 10px;
+  border: 2px solid rgba(94, 35, 0, 1.0000);
+  -webkit-box-shadow: 5px 5px 3px rgba(50, 50, 50, 0.62);
+  -moz-box-shadow:    5px 5px 3px rgba(50, 50, 50, 0.62);
+  box-shadow:         5px 5px 3px rgba(50, 50, 50, 0.62);
+}
+
+.checkbox {
+  padding-top: 20px;
+  margin-right: -30px;
+}
+
+.main-page-checklist {
+  color: rgba(94, 35, 0, 1.0000);
+  padding: 15px 15px 15px 0px;
+  line-height: 1.2em;
+}
+
+h1.main-page-checklist {
+  font-size: 4em;
+
+}
+
+h2.main-page-checklist {
+  font-size: 2em;
+}
+
+#wrapped-chocolates {
+  padding: 100px;
+}
 
 .btn-primary {
 	background-color: rgba(252, 148, 23, 1.0000);
@@ -76,9 +146,6 @@ p, div, span {
 
 .center {
   text-align: center;
-}
-#hero-img {
-	max-height: 140px;
 }
 
 .navbar-default {

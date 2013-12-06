@@ -4,14 +4,18 @@ CatsCuties::Application.routes.draw do
   resources :carts
   resources :orders
   resources :charges
+  resources :products
+
+  devise_for :users
 
   get "/about" => "store#about", as: 'about'
   get "/testimonials" => "testimonials#index", as: 'testimonials'
   get "/contact" => "store#contact", as: 'contact'
   get "/news" => "store#news", as: 'news'
-  devise_for :users
-  resources :products
-  root :to => "store#index", as: 'store'
+  get "/store" => "store#index", as: 'store'
+
+  root :to => "store#main", as: 'main'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

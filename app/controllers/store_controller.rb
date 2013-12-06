@@ -6,6 +6,9 @@ class StoreController < ApplicationController
   	@products = Product.order("updated_at DESC")
   end
 
+  def main
+  end
+
   def about
   end
 
