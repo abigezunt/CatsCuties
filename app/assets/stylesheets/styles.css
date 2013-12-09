@@ -23,10 +23,6 @@ li {
   overflow: scroll;
 }
 
-#content {
-  margin-top: 80px;
-}
-
 body, h1, h2, h3, h4, h5, h6, p, div, span, small {
   font-family: 'EB Garamond', serif;
 }
@@ -56,8 +52,7 @@ body, h1, h2, h3, h4, h5, h6, p, div, span, small {
 }
 
 #hero-img {
-  max-height: 120px;
-  margin-top: -60px;
+  max-height: 180px;
   padding-bottom: 20px;
 }
 
