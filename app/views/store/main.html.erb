@@ -1,17 +1,19 @@
 
-<div class="text-center" id="banner-header">
-	<div class="inline-block span2">
+<div class="row text-center" id="banner-header">
+	<div class="inline-block col-sm-2">
 	  <%= image_tag("bow.png", :id => "hero-img", :class => "img-responsive") %>
 	</div> 
-	<div class="inline-block span8" id="banner">
+	<div class="inline-block col-sm-8" id="banner">
 	  <h1 class="brown" id="heading">Cat's Cuties</h1>  
 	  <h3 class="orange" id="subheading">special desserts for special people</h3>
 	</div>
 </div>
 
+<div class="row">
 <div class="col-md-12 text-center" id="wavy">
   <h1 id="deliciousdark">Delicious, Dark</h1>
   <h2 id="chocolates">CHOCOLATES</h2>
+</div>
 </div>
 
 <div class="col-md-12 text-center">
@@ -21,29 +23,28 @@
 </div>
 
 <ul id="checklist">
-<li><h1 class="brown"><%= image_tag "checkbox.png" %> Free of most allergens & problem ingredients</h1>
-    <h2 class="brown">no gluten/wheat, dairy/casein, nuts, soy, trans fat, cholesterol - low or no sodium</h2></li>
-<li><h1 class="brown"><%= image_tag "checkbox.png" %> Vegan</h1></li>
-<li><h1 class="brown"><%= image_tag "checkbox.png" %> Kosher-parve</h1></li>
-<li><h1 class="brown"><%= image_tag "checkbox.png" %> Antioxidant-rich</h1></li>
+<li class="brown"><%= image_tag "checkbox.png" %> Free of most allergens & problem ingredients
+    <small class="brown">no gluten/wheat, dairy/casein, nuts, soy, trans fat, cholesterol - low or no sodium</small></li>
+<li class="brown"><%= image_tag "checkbox.png" %> Vegan</li>
+<li class="brown"><%= image_tag "checkbox.png" %> Kosher-parve</li>
+<li class="brown"><%= image_tag "checkbox.png" %> Antioxidant-rich</li>
 </ul>
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8" id="wrapped-chocolates">
+	  <figure class="text-center"><%= image_tag("wrapped-chocolates.png", :class => "img-responsive", :alt => "wrapped chocolates")%></figure>
+		<h3>Cat's Cuties is on a mission to make allergy-friendly desserts.  We are committed to: </h3>
+		 
+		<ul class="hearts">
+		<li class="brown">crafting beautiful, luscious desserts that virtually everyone can enjoy</li>
+		<li class="brown">producing our scrumptious delights in a safe process that prevents cross contamination with allergens</li>
+		<li class="brown">donating 18% of our net profits</li>
+		<li class="brown">helping local charitable organizations raise funds</li>
+		<li class="brown">creating jobs in Massachusetts</li>
+		<li class="brown">being environmentally friendly</li>
+		</ul>
 
-<div class="col-sm-2"></div>
-<div class="col-sm-8">
-	<div class="text-center span6" id="wrapped-chocolates"><%= image_tag("wrapped-chocolates.png", :class => "img-responsive") %></div>
-
-
-	<h2>Cat's Cuties is on a mission to make allergy-friendly desserts.  We are committed to: </h2>
-	 
-	<ul class="hearts">
-	<li><h3 class="brown">crafting beautiful, luscious desserts that virtually everyone can enjoy</h3></li>
-	<li><h3 class="brown">producing our scrumptious delights in a safe process that prevents cross contamination with allergens</h3></li>
-	<li><h3 class="brown">donating 18% of our net profits</h3></li>
-	<li><h3 class="brown">helping local charitable organizations raise funds</h3></li>
-	<li><h3 class="brown">creating jobs in Massachusetts</h3></li>
-	<li><h3 class="brown">being environmentally friendly</h3></li>
-	</ul>
-
+	</div>
+	<div class="col-sm-2"></div>
 </div>
-<div class="col-sm-2"></div>
 
